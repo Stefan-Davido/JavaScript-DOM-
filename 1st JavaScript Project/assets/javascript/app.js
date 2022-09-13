@@ -513,6 +513,7 @@ function addTodo(event){
 }
 
 function deleteCheck(e) {
+    
     var item = e.target;
     // console.log(e.target);
     //Delete Language Name
@@ -533,5 +534,6 @@ function deleteCheck(e) {
     if(item.classList[0] === 'complete-btn'){
         var todo = item.parentElement;
         todo.classList.toggle("completed")
+
     }
 }
